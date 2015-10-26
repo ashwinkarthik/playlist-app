@@ -14,3 +14,5 @@ Instructions to run locally:-
 4. Run the command "node server.js" - The app listens to the port 1500 when run locally.
 
 5. Open your browser and navigate to the address "http://localhost:1500/" to see the web-app running on the local machine. 
+
+Played around technologies:-  Node.js, Express.js, Angular.js, Bootstrap, Youtube Search API. 
