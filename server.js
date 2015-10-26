@@ -51,5 +51,5 @@ app.get('/:name',function(req,res){
         });
 });
 
-app.listen(1500);
-console.log('Listening on Port 1500');
+app.listen(process.env.PORT || 1500 );
+console.log('Listening on process.env.PORT || Port 1500');
