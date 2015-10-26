@@ -33,7 +33,7 @@ playlistApp.controller('mainController',function($scope,$http){
         };
 
         function getResults(selectedArtist){
-                       $http.get("https://ashwin-playlist-app.herokuapp.com/"+selectedArtist).success(function(response){
+                       $http.get("http://localhost:1500/"+selectedArtist).success(function(response){
                                                                                   vm.results = response;                                             });
         }
             
