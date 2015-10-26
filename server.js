@@ -10,10 +10,10 @@ var express = require('express'),
 googleapis.options ({ auth: API_KEY });
 var youtube = googleapis.youtube ('v3');
 
-app.use(express.static('../playlist\-app/'));
+app.use(express.static(__dirname+'/'));
 
 app.get('/',function(req,res){
-        res.sendFile('../playlist\-app/index.html');
+        res.sendFile(path.join(__dirname,'/index.html'));
 });
 
 app.get('/:name',function(req,res){
