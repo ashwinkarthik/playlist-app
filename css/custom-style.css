@@ -1,0 +1,26 @@
+body, modal {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.modal-content {
+    
+    width:900px;
+    background-color: black;
+}
+
+.modal-title {
+    font-color: white;
+}
+
+
+.result-tile {
+    width : 25%;
+    height : 10%;
+    border: 0px solid #000000;
+    padding: 25px 5px 5px 5px;
+    
+}
+
+.result-tile  p {
+    padding: 7.5px 0px 0px 0px;
+}
