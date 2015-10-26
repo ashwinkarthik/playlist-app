@@ -1,6 +1,8 @@
 # playlist-app
 Link:- https://ashwin-playlist-app.herokuapp.com/
+
 Technologies:-  Node.js, Express.js, Angular.js, Bootstrap, Youtube Search API. 
+
 Version 1:- A Simple application that loads artist's videos based on user's selection in a dropdown.
 
 Instructions to run locally:-
