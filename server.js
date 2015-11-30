@@ -4,7 +4,7 @@ var express = require('express'),
     path = require('path'),
     app = express(),
     googleapis = require('googleapis'),
-    API_KEY = 'AIzaSyBsa8KVrYKsCi2PjXAkTlz5DavoKQceNRQ',
+    API_KEY = 'YOUR_API_KEY',
     RESULT_COUNT = 20;
 
 googleapis.options ({ auth: API_KEY });
