@@ -56,7 +56,7 @@ playlistApp.directive('modal', function () {
                   restrict: 'E', // 'E' - represents the custom element <modal></modal>. Other valus : 'A' - attribute, 'C' - class and 'M' - comment.
                   transclude: true,  // Insert custom content(inside modal) using the ng-transclude directive in the template
                   replace:true,   // Replaces with the above template
-                  scope:true,
+                  scope:true,    // new child scope that prototypically inherits from the parent scope.
                   link: function postLink(scope, element, attrs) {     // The Linking function where we describe the behavior for the directive. postLink - executes after the template has been cloned.
                   scope.title = attrs.title;
                   
