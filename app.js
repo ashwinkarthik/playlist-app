@@ -53,14 +53,14 @@ playlistApp.directive('modal', function () {
                   '</div>' +
                   '</div>' +
                   '</div>',
-                  restrict: 'E',
-                  transclude: true,
-                  replace:true,
+                  restrict: 'E', // 'E' - represents the custom element <modal></modal>. Other valus : 'A' - attribute, 'C' - class and 'M' - comment.
+                  transclude: true,  // Insert custom content(inside modal) using the ng-transclude directive in the template
+                  replace:true,   // Replaces with the above template
                   scope:true,
-                  link: function postLink(scope, element, attrs) {
+                  link: function postLink(scope, element, attrs) {     // The Linking function where we describe the behavior for the directive. postLink - executes after the template has been cloned.
                   scope.title = attrs.title;
                   
-                  scope.$watch(attrs.visible, function(value){
+                  scope.$watch(attrs.visible, function(value){     // Watches for change in the value of a variable.
                                if(value == true)
                                $(element).modal('show');
                                else
@@ -68,7 +68,7 @@ playlistApp.directive('modal', function () {
                                });
                   
                   $(element).on('shown.bs.modal', function(){
-                                scope.$apply(function(){
+                                scope.$apply(function(){         // Checks for updates to binding values and updates accordingly.
                                              scope.$parent[attrs.visible] = true;
                                              });
                                 });
